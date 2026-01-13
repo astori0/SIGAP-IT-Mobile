@@ -20,4 +20,18 @@ menggunakan versi web.
 ---
 
 ## 🧱 Arsitektur Sistem
++----------------------+
+| Flutter Mobile App |
++----------------------+
+|
+| REST API (JSON)
+v
++----------------------+
+| Laravel Backend API |
++----------------------+
+|
+v
++----------------------+
+| MySQL Database |
++----------------------+
 
