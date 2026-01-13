@@ -21,15 +21,11 @@ menggunakan versi web.
 
 ## 🧱 Arsitektur Sistem
 
-Kalau kampus tidak minta label:
-
-```md
 ```mermaid
 flowchart TB
-    Flutter[Flutter Mobile App]
-    Laravel[Laravel Backend API]
-    DB[MySQL Database]
+    A[Flutter Mobile App]
+    B[Laravel Backend API]
+    C[MySQL Database]
 
-    Flutter --> Laravel
-    Laravel --> DB
-
+    A -->|REST API JSON| B
+    B --> C
