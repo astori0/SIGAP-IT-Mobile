@@ -57,3 +57,59 @@ dengan aplikasi web SIGAPIT.
 - Mobile login via `POST /api/login`
 - Token disimpan menggunakan Sanctum
 - Token dikirim via header:
+  Authorization: Bearer <token>
+
+### 2️⃣ Pengaduan
+- Mobile create pengaduan via:
+  POST /api/tickets
+- Admin & Kepala Dinas memproses pengaduan via Web
+- Status update otomatis terlihat di Mobile
+- 
+### 3️⃣ Attachment (Private)
+- Gambar disimpan di:
+  storage/app/private/
+- Akses via:
+  GET /api/attachments/{id}
+- Hanya user terautentikasi yang bisa mengakses
+
+---
+
+## 🗄️ Struktur Database (Ringkas)
+
+- users
+- tickets
+- ticket_histories
+- attachments
+- roles
+
+Relasi:
+- user → tickets
+- ticket → histories
+- ticket → attachments
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+### Mobile
+- Flutter
+- Dio (HTTP Client)
+- SharedPreferences
+- Material 3
+
+### Backend
+- Laravel
+- Sanctum
+- MySQL
+
+---
+
+## 📦 Build APK
+
+```bash
+flutter build apk --release
+```
+Output:
+```
+build/app/outputs/flutter-apk/SIGAPIT.apk
+```
