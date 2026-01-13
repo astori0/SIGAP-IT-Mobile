@@ -20,18 +20,13 @@ menggunakan versi web.
 ---
 
 ## 🧱 Arsitektur Sistem
-+----------------------+
-| Flutter Mobile App |
-+----------------------+
-|
-| REST API (JSON)
-v
-+----------------------+
-| Laravel Backend API |
-+----------------------+
-|
-v
-+----------------------+
-| MySQL Database |
-+----------------------+
+
+```mermaid
+flowchart TB
+    A[Flutter Mobile App]
+    B[Laravel Backend API]
+    C[MySQL Database]
+
+    A -->|REST API (JSON)| B
+    B --> C
 
