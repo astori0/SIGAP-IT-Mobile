@@ -29,7 +29,7 @@ flowchart TB
 
     A -->|REST API JSON| B
     B --> C
-
+```
 ---
 
 ## 🔐 Integrasi dengan SIGAPIT Web
