@@ -60,21 +60,18 @@ dengan aplikasi web SIGAPIT.
   Authorization: Bearer <token>
 
 ### 2️⃣ Pengaduan
-- Mobile create pengaduan via:
-  POST /api/tickets
+- Mobile create pengaduan via `POST /api/tickets`
 - Admin & Kepala Dinas memproses pengaduan via Web
 - Status update otomatis terlihat di Mobile
 - 
-### 3️⃣ Attachment (Private)
-- Gambar disimpan di:
-  storage/app/private/
-- Akses via:
-  GET /api/attachments/{id}
+### 3️⃣ Attachment
+- Gambar disimpan di `storage/app/private/`
+- Akses via `GET /api/attachments/{id}`
 - Hanya user terautentikasi yang bisa mengakses
 
 ---
 
-## 🗄️ Struktur Database (Ringkas)
+## 🗄️ Struktur Database
 
 - users
 - tickets
